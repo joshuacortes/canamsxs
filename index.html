@@ -6,3 +6,415 @@
     <title>Can-Am Side-by-Side Vehicles (SxS) | UTVs, Off-Road & Utility Vehicles</title>
 
     <meta name="description" content="Shop Can-Am Side-by-Side vehicles (SxS & UTVs) including Maverick, Defender and Commander models. Explore high-performance off-road vehicles, sport UTVs, utility side-by-sides, trail riding machines and adventure-ready SxS vehicles built for work and play."/>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+<style>
+
+/* ==========================
+   RESET
+========================== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background:#fff;
+  color:#000;
+}
+
+/* ==========================
+   STICKY HEADER
+========================== */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:9999;
+  background:#fff;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+/* ==========================
+   NAV WRAPPER
+========================== */
+.nav-wrapper{
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 28px;
+  height:78px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  position:relative;
+}
+
+/* ==========================
+   LOGO
+========================== */
+.logo{
+  text-decoration:none;
+  color:#000;
+  z-index:20;
+}
+
+.logo-text{
+  font-size:1.55rem;
+  font-weight:900;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-style:italic;
+
+  transform:skewX(-10deg);
+
+  display:inline-block;
+  line-height:1;
+
+  text-rendering:geometricPrecision;
+  white-space:nowrap;
+}
+
+/* ==========================
+   CENTER NAV
+========================== */
+.nav-menu{
+  list-style:none;
+
+  display:flex;
+  align-items:center;
+  gap:48px;
+
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.nav-menu li{
+  list-style:none;
+}
+
+.nav-menu a{
+  text-decoration:none;
+  color:#000;
+
+  font-size:.92rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+
+  position:relative;
+  transition:.25s ease;
+  white-space:nowrap;
+}
+
+/* subtle hover line */
+.nav-menu a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+
+  width:0;
+  height:1.5px;
+
+  background:#000;
+  transition:width .28s ease;
+}
+
+.nav-menu a:hover::after{
+  width:100%;
+}
+
+.nav-menu a:hover{
+  opacity:.72;
+}
+
+/* ==========================
+   MOBILE CTA BUTTON
+========================== */
+.mobile-cta{
+  display:none;
+
+  text-decoration:none;
+  color:#fff;
+  background:#000;
+
+  font-size:.69rem;
+  font-weight:700;
+  text-transform:uppercase;
+
+  padding:6px 10px;
+  border-radius:999px;
+
+  white-space:nowrap;
+  transition:.25s ease;
+}
+
+.mobile-cta:hover{
+  opacity:.82;
+}
+
+/* ==========================
+   HAMBURGER
+========================== */
+.menu-toggle{
+  display:none;
+  width:32px;
+  height:24px;
+
+  border:none;
+  background:none;
+  cursor:pointer;
+
+  position:relative;
+  z-index:1001;
+}
+
+.menu-toggle span{
+  position:absolute;
+  left:0;
+
+  width:100%;
+  height:2px;
+
+  background:#000;
+  transition:.3s ease;
+}
+
+.menu-toggle span:nth-child(1){
+  top:0;
+}
+
+.menu-toggle span:nth-child(2){
+  top:10px;
+}
+
+.menu-toggle span:nth-child(3){
+  top:20px;
+}
+
+/* animated X */
+.menu-toggle.active span:nth-child(1){
+  transform:rotate(45deg);
+  top:10px;
+}
+
+.menu-toggle.active span:nth-child(2){
+  opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+  transform:rotate(-45deg);
+  top:10px;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media(max-width:980px){
+
+  .nav-wrapper{
+    height:70px;
+    padding:0 22px;
+    gap:8px;
+  }
+
+  .logo-text{
+    font-size:1.18rem;
+    letter-spacing:.15em;
+  }
+
+  /* show CTA */
+  .mobile-cta{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* show hamburger */
+  .menu-toggle{
+    display:block;
+  }
+
+  /* mobile nav */
+  .nav-menu{
+    position:fixed;
+    top:70px;
+    left:0;
+
+    transform:none;
+    width:100%;
+
+    background:#fff;
+    border-top:1px solid rgba(0,0,0,.06);
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0;
+
+    overflow:hidden;
+    max-height:0;
+
+    transition:max-height .35s ease;
+  }
+
+  .nav-menu.active{
+    max-height:420px;
+  }
+
+  .nav-menu li{
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,.05);
+  }
+
+  .nav-menu a{
+    display:block;
+    width:100%;
+
+    padding:18px 22px;
+    font-size:.92rem;
+    letter-spacing:.08em;
+  }
+
+  .nav-menu a::after{
+    display:none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="nav-wrapper">
+
+    <!-- LOGO -->
+    <a
+      href="/"
+      class="logo"
+      aria-label="CAN-AM SXS Home"
+    >
+      <span class="logo-text">
+        CAN-AM SXS
+      </span>
+    </a>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Primary Navigation">
+
+      <ul
+        class="nav-menu"
+        id="navMenu"
+      >
+
+        <li>
+          <a
+            href="/browse-models"
+            title="Browse Can-Am Side by Side Models"
+          >
+            Browse Models
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/build-price-your-own"
+            title="Build and Price a Can-Am Side by Side"
+          >
+            Build &amp; Price
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/promotions"
+            title="Can-Am Promotions and Offers"
+          >
+            Promotions
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/custom-builds"
+            title="Custom Can-Am Side by Side Builds"
+          >
+            Custom Builds
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- MOBILE CTA -->
+    <a
+      href="/build-price"
+      class="mobile-cta"
+      aria-label="Build and Price a Can-Am Side by Side">
+      Build &amp; Price
+    </a>
+
+    <!-- HAMBURGER -->
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open Navigation Menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+</header>
+
+<script>
+
+const menuToggle =
+  document.getElementById("menuToggle");
+
+const navMenu =
+  document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+
+  menuToggle.classList.toggle("active");
+  navMenu.classList.toggle("active");
+
+  const expanded =
+    menuToggle.getAttribute(
+      "aria-expanded"
+    ) === "true";
+
+  menuToggle.setAttribute(
+    "aria-expanded",
+    !expanded
+  );
+});
+
+</script>
+
+</body>
+</html>
