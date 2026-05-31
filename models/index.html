@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/>
+
+<title>Browse Models CAN-AM SXS</title>
+
+<meta
+  name="description"
+  content="Browse Can-Am SxS models, build and price your off-road vehicle, view promotions, and explore custom builds."
+/>
+
+<style>
+
+/* ==========================
+   RESET
+========================== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background:#fff;
+  color:#000;
+}
+
+/* ==========================
+   STICKY HEADER
+========================== */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:9999;
+  background:#fff;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+/* ==========================
+   NAV WRAPPER
+========================== */
+.nav-wrapper{
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 28px;
+  height:78px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  position:relative;
+}
+
+/* ==========================
+   LOGO
+========================== */
+.logo{
+  text-decoration:none;
+  color:#000;
+  z-index:20;
+}
+
+.logo-text{
+  font-size:1.55rem;
+  font-weight:900;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-style:italic;
+
+  transform:skewX(-10deg);
+
+  display:inline-block;
+  line-height:1;
+
+  text-rendering:geometricPrecision;
+  white-space:nowrap;
+}
+
+/* ==========================
+   CENTER NAV
+========================== */
+.nav-menu{
+  list-style:none;
+
+  display:flex;
+  align-items:center;
+  gap:48px;
+
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.nav-menu li{
+  list-style:none;
+}
+
+.nav-menu a{
+  text-decoration:none;
+  color:#000;
+
+  font-size:.92rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+
+  position:relative;
+  transition:.25s ease;
+  white-space:nowrap;
+}
+
+/* subtle hover line */
+.nav-menu a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+
+  width:0;
+  height:1.5px;
+
+  background:#000;
+  transition:width .28s ease;
+}
+
+.nav-menu a:hover::after{
+  width:100%;
+}
+
+.nav-menu a:hover{
+  opacity:.72;
+}
+
+/* ==========================
+   MOBILE CTA BUTTON
+========================== */
+.mobile-cta{
+  display:none;
+
+  text-decoration:none;
+  color:#fff;
+  background:#000;
+
+  font-size:.69rem;
+  font-weight:700;
+  text-transform:uppercase;
+
+  padding:6px 10px;
+  border-radius:999px;
+
+  white-space:nowrap;
+  transition:.25s ease;
+}
+
+.mobile-cta:hover{
+  opacity:.82;
+}
+
+/* ==========================
+   HAMBURGER
+========================== */
+.menu-toggle{
+  display:none;
+  width:32px;
+  height:24px;
+
+  border:none;
+  background:none;
+  cursor:pointer;
+
+  position:relative;
+  z-index:1001;
+}
+
+.menu-toggle span{
+  position:absolute;
+  left:0;
+
+  width:100%;
+  height:2px;
+
+  background:#000;
+  transition:.3s ease;
+}
+
+.menu-toggle span:nth-child(1){
+  top:0;
+}
+
+.menu-toggle span:nth-child(2){
+  top:10px;
+}
+
+.menu-toggle span:nth-child(3){
+  top:20px;
+}
+
+/* animated X */
+.menu-toggle.active span:nth-child(1){
+  transform:rotate(45deg);
+  top:10px;
+}
+
+.menu-toggle.active span:nth-child(2){
+  opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+  transform:rotate(-45deg);
+  top:10px;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media(max-width:980px){
+
+  .nav-wrapper{
+    height:70px;
+    padding:0 22px;
+    gap:8px;
+  }
+
+  .logo-text{
+    font-size:1.18rem;
+    letter-spacing:.15em;
+  }
+
+  /* show CTA */
+  .mobile-cta{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* show hamburger */
+  .menu-toggle{
+    display:block;
+  }
+
+  /* mobile nav */
+  .nav-menu{
+    position:fixed;
+    top:70px;
+    left:0;
+
+    transform:none;
+    width:100%;
+
+    background:#fff;
+    border-top:1px solid rgba(0,0,0,.06);
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0;
+
+    overflow:hidden;
+    max-height:0;
+
+    transition:max-height .35s ease;
+  }
+
+  .nav-menu.active{
+    max-height:420px;
+  }
+
+  .nav-menu li{
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,.05);
+  }
+
+  .nav-menu a{
+    display:block;
+    width:100%;
+
+    padding:18px 22px;
+    font-size:.92rem;
+    letter-spacing:.08em;
+  }
+
+  .nav-menu a::after{
+    display:none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="nav-wrapper">
+
+    <!-- LOGO -->
+    <a
+      href="/"
+      class="logo"
+      aria-label="CAN-AM SXS Home"
+    >
+      <p class="logo-text">
+        CAN-AM SXS
+      </p>
+    </a>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Primary Navigation">
+
+      <ul
+        class="nav-menu"
+        id="navMenu"
+      >
+
+        <li>
+          <a
+            href="/models/"
+            title="Browse Can-Am Side by Side Models"
+          >
+            Browse Models
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/build-price-your-own"
+            title="Build and Price a Can-Am Side by Side"
+          >
+            Build &amp; Price
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/promotions"
+            title="Can-Am Promotions and Offers"
+          >
+            Promotions
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/custom-builds/"
+            title="Custom Can-Am Side by Side Builds"
+          >
+            Custom Builds
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- MOBILE CTA -->
+    <a
+      href="/build-price"
+      class="mobile-cta"
+      aria-label="Build and Price a Can-Am Side by Side">
+      Build &amp; Price
+    </a>
+
+    <!-- HAMBURGER -->
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open Navigation Menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+</header>
+
+<script>
+
+const menuToggle =
+  document.getElementById("menuToggle");
+
+const navMenu =
+  document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+
+  menuToggle.classList.toggle("active");
+  navMenu.classList.toggle("active");
+
+  const expanded =
+    menuToggle.getAttribute(
+      "aria-expanded"
+    ) === "true";
+
+  menuToggle.setAttribute(
+    "aria-expanded",
+    !expanded
+  );
+});
+
+</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+<section class="vehicle-section">
+
+  <div class="vehicle-container">
+
+    <div class="section-intro">
+      <h1 style="font-size:2em;">
+        Explore Can-Am Side By Side Models
+      </h1>
+
+      <p>
+        Browse race-ready Maverick models, versatile recreational
+        side-by-sides, and hard-working utility vehicles built for
+        every trail, jobsite, and off-road adventure.
+      </p>
+    </div>
+
+    <!-- ======================
+         SPORT / MAVERICK FIRST
+    ======================= -->
+    <section class="vehicle-category">
+
+      <div class="category-header">
+        <div>
+          <span class="eyebrow">
+            SPORT
+          </span>
+
+          <h2>
+            Maverick Series
+          </h2>
+
+          <p>
+            Serious off-road performance engineered for riders
+            chasing speed, control, and adrenaline.
+          </p>
+        </div>
+      </div>
+
+      <div class="vehicle-grid">
+
+        <!-- CARD -->
+        <article class="vehicle-card">
+
+          <a href="/maverick-r">
+
+            <div class="vehicle-image-wrap">
+              <img
+                src="https://i.postimg.cc/QdVnprF4/ORVMY26Maverick-RMAXXrc-SASMill-NTLoft-Green-Satin0007JTF00Studio34FRNA.jpg"
+                alt="2026 Maverick R"
+              >
+            </div>
+
+            <div class="vehicle-content">
+
+              <span class="vehicle-year">
+                2026
+              </span>
+
+              <h3>
+                Maverick R
+              </h3>
+
+              <div class="vehicle-price">
+                Starting at $37,890
+              </div>
+
+              <p>
+                The fastest, most advanced off-road vehicle built to
+                dominate every race with championship-level
+                performance.
+              </p>
+
+            </div>
+
+          </a>
+
+        </article>
+
+        <!-- CARD -->
+        <article class="vehicle-card">
+
+          <a href="/maverick-x3">
+
+            <div class="vehicle-image-wrap">
+              <img
+                src="https://i.postimg.cc/7hb6n60V/ORVSSVMY25Maverick-X3XRSTurbo-RRTriple-Black-SKU0007TSF00Studio34FRNA2.jpg"
+                alt="2026 Maverick X3"
+              >
+            </div>
+
+            <div class="vehicle-content">
+
+              <span class="vehicle-year">
+                2026
+              </span>
+
+              <h3>
+                Maverick X3
+              </h3>
+
+              <div class="vehicle-price">
+                Starting at $19,999
+              </div>
+
+              <p>
+                Race-proven performance and unmatched durability with
+                turbocharged power and aggressive styling built for
+                adrenaline.
+              </p>
+
+            </div>
+
+          </a>
+
+        </article>
+
+        
+        
+      </div>
+
+    </section>
+
+    <!-- ======================
+         RECREATIONAL
+    ======================= -->
+    <section class="vehicle-category">
+
+      <div class="category-header">
+
+        <div>
+          <span class="eyebrow">
+            RECREATIONAL
+          </span>
+
+          <h2>
+            Recreation Series
+          </h2>
+
+          <p>
+            Comfortable, versatile side-by-sides designed to explore,
+            ride longer, and conquer every trail with confidence.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="vehicle-grid">
+
+        <article class="vehicle-card">
+          <a href="/commander">
+
+            <div class="vehicle-image-wrap">
+              <img
+                src="https://i.postimg.cc/fbhVQMQm/ORVSSVMY23Can-Am-Commander-DPS700Tundra-Green0009PPC0034FRINTL.png"
+                alt="2026 Commander"
+              >
+            </div>
+
+            <div class="vehicle-content">
+
+              <span class="vehicle-year">
+                2026
+              </span>
+
+              <h3>
+                Commander
+              </h3>
+
+              <div class="vehicle-price">
+                Starting at $15,399
+              </div>
+
+              <p>
+                Built to work hard and play harder with refined
+                strength and proven off-road versatility.
+              </p>
+
+            </div>
+
+          </a>
+        </article>
+
+
+      </div>
+
+    </section>
+
+    <!-- ======================
+         UTILITY
+    ======================= -->
+    <section class="vehicle-category">
+
+      <div class="category-header">
+
+        <div>
+          <span class="eyebrow">
+            UTILITY
+          </span>
+
+          <h2>
+            Defender Series
+          </h2>
+
+          <p>
+            Hard-working utility side-by-sides engineered to haul,
+            tow, and handle demanding jobs every day.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="vehicle-grid">
+
+        <article class="vehicle-card">
+
+          <a href="/defender">
+
+            <div class="vehicle-image-wrap">
+              <img
+                src="https://i.postimg.cc/504jjptr/ORVSSVMY23Can-Am-Defender-XTHD10Stone-Gray0008CPD00Studio34FRNA.png"
+                alt="2026 Defender"
+              >
+            </div>
+
+            <div class="vehicle-content">
+
+              <span class="vehicle-year">
+                2026
+              </span>
+
+              <h3>
+                Defender
+              </h3>
+
+              <div class="vehicle-price">
+                Starting at $13,399
+              </div>
+
+              <p>
+                A versatile workhorse with class-leading towing and
+                cargo capability for ranching, farming, and recreation.
+              </p>
+
+            </div>
+
+          </a>
+
+        </article>
+
+        <article class="vehicle-card">
+
+          <a href="/defender-hd11">
+
+            <div class="vehicle-image-wrap">
+              <img
+                src="https://i.postimg.cc/q7XzkWp9/ORVSSVMY23Can-Am-Defender-PROLimited-HD10Stone-Gray0009HPD00Studio34FRNA.png"
+                alt="2026 Defender HD11"
+              >
+            </div>
+
+            <div class="vehicle-content">
+
+              <span class="vehicle-year">
+                2026
+              </span>
+
+              <h3>
+                Defender HD11
+              </h3>
+
+              <div class="vehicle-price">
+                Starting at $22,699
+              </div>
+
+              <p>
+                Featuring a dedicated work engine and smoother
+                transmission built for long-haul reliability.
+              </p>
+
+            </div>
+
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</section>
+
+<style>
+
+/* ==========================
+SECTION
+========================== */
+
+.vehicle-section{
+  padding:90px 28px;
+}
+
+.vehicle-container{
+  max-width:1400px;
+  margin:0 auto;
+}
+
+.section-intro{
+  max-width:820px;
+  margin-bottom:80px;
+}
+
+.section-intro h1{
+  font-size:clamp(2rem,5vw,4rem);
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-.04em;
+  margin-bottom:20px;
+}
+
+.section-intro p{
+  font-size:1rem;
+  line-height:1.8;
+  color:rgba(0,0,0,.68);
+}
+
+/* ==========================
+CATEGORY
+========================== */
+
+.vehicle-category{
+  margin-bottom:100px;
+}
+
+.category-header{
+  margin-bottom:34px;
+}
+
+.eyebrow{
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  display:block;
+  margin-bottom:12px;
+}
+
+.category-header h2{
+  font-size:2rem;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.category-header p{
+  color:rgba(0,0,0,.68);
+  max-width:700px;
+  line-height:1.8;
+}
+
+/* ==========================
+GRID
+========================== */
+
+.vehicle-grid{
+  display:grid;
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:28px;
+}
+
+/* ==========================
+CARD
+========================== */
+
+.vehicle-card{
+  border:1px solid rgba(0,0,0,.08);
+  transition:.28s ease;
+  background:#fff;
+}
+
+.vehicle-card:hover{
+  transform:translateY(-5px);
+}
+
+.vehicle-card a{
+  color:inherit;
+  text-decoration:none;
+  display:block;
+}
+
+.vehicle-image-wrap{
+  aspect-ratio:1/1;
+  overflow:hidden;
+  background:#f5f5f5;
+}
+
+.vehicle-image-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.vehicle-content{
+  padding:26px;
+}
+
+.vehicle-year{
+  font-size:.74rem;
+  font-weight:800;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  display:block;
+  margin-bottom:10px;
+}
+
+.vehicle-content h3{
+  font-size:1.5rem;
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.vehicle-price{
+  font-weight:700;
+  margin-bottom:14px;
+}
+
+.vehicle-content p{
+  color:rgba(0,0,0,.7);
+  line-height:1.8;
+  font-size:.95rem;
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:980px){
+
+  .vehicle-section{
+    padding:60px 22px;
+  }
+
+  .vehicle-grid{
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  .category-header h2{
+    font-size:1.7rem;
+  }
+
+  .vehicle-content{
+    padding:22px;
+  }
+}
+
+</style>
+
+
+</body>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <footer class="site-footer">
+
+  <div class="footer-container">
+
+    <!-- COLUMN 1 -->
+    <div class="footer-column footer-brand">
+
+      <a href="/" class="footer-logo">
+        CAN-AM SXS
+      </a>
+
+
+      <div class="footer-contact">
+
+        <a
+          href="tel:+16572396371"
+          class="footer-link"
+        >
+          Phone: (657) 239-6371
+        </a>
+
+        <a
+          href="mailto:joshc@motounitedsocal.com"
+          class="footer-link"
+        >
+          Email: joshc@motounitedsocal.com
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div class="footer-column">
+
+      <h4 class="footer-heading">
+        CAN-AM SXS
+      </h4>
+
+      <ul class="footer-links">
+
+        <li>
+          <a href="/models/">
+            Browse Models
+          </a>
+        </li>
+
+        <li>
+          <a href="/build-price-your-own">
+            Build &amp; Price
+          </a>
+        </li>
+
+        <li>
+          <a href="/promotions">
+            Promotions
+          </a>
+        </li>
+
+        <li>
+          <a href="/custom-builds/">
+            Custom Builds
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div class="footer-column">
+
+      <h4 class="footer-heading">
+        Can-Am Community
+      </h4>
+
+      <ul class="footer-links">
+
+        <li><a href="/events">Events</a></li>
+        <li><a href="/sxs-trail-guides/">Trail Guides</a></li>
+        <li><a href="/sxs-guides/">SxS Guides</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- COLUMN 4 -->
+    <div class="footer-column">
+
+      <h4 class="footer-heading">
+        Can-Am Upgrades
+      </h4>
+
+      <ul class="footer-links">
+
+        
+        <li><a href="/suspension">Suspension</a></li>
+        <li><a href="/tires-wheels">Tires / Wheels</a></li>
+        <li><a href="/roof-windshield-doors">Roof / Windshield / Doors</a></li>
+        <li><a href="/lighting">Lighting</a></li>
+        <li><a href="/maintenance">Maintenance Parts</a></li>
+
+      </ul>
+
+    </div>
+
+      <p class="footer-copyright">
+        © CANAMSXS<br>
+        All Rights Reserved
+      </p>
+  </div>
+
+</footer>
+  
+  <style>
+    /* ==========================
+   FOOTER
+========================== */
+.site-footer{
+  border-top:1px solid rgba(0,0,0,.08);
+  background:#fff;
+  margin-top:90px;
+}
+
+.footer-container{
+  max-width:1400px;
+  margin:0 auto;
+
+  padding:56px 28px;
+
+  display:grid;
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1fr;
+
+  gap:60px;
+}
+
+/* ==========================
+   COLUMN
+========================== */
+.footer-column{
+  display:flex;
+  flex-direction:column;
+}
+
+/* ==========================
+   BRAND COLUMN
+========================== */
+.footer-logo{
+  text-decoration:none;
+  color:#000;
+
+  font-size:1.2rem;
+  font-weight:900;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-style:italic;
+
+  transform:skewX(-10deg);
+
+  line-height:1;
+  margin-bottom:20px;
+
+  white-space:nowrap;
+}
+
+.footer-copyright{
+  font-size:.78rem;
+  line-height:1.7;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:rgba(0,0,0,.65);
+
+  margin-bottom:22px;
+}
+
+.footer-contact{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+.footer-heading{
+  font-size:.78rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+
+  margin-bottom:22px;
+}
+
+/* ==========================
+   LINKS
+========================== */
+.footer-links{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.footer-links a,
+.footer-link{
+  text-decoration:none;
+  color:#000;
+
+  font-size:.85rem;
+  font-weight:500;
+  letter-spacing:.04em;
+
+  transition:.25s ease;
+  position:relative;
+  width:fit-content;
+}
+
+/* subtle hover underline */
+.footer-links a::after,
+.footer-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+
+  width:0;
+  height:1px;
+  background:#000;
+
+  transition:.25s ease;
+}
+
+.footer-links a:hover,
+.footer-link:hover{
+  opacity:.7;
+}
+
+.footer-links a:hover::after,
+.footer-link:hover::after{
+  width:100%;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media(max-width:980px){
+
+  .footer-container{
+    grid-template-columns:1fr;
+    gap:42px;
+    padding:42px 22px;
+  }
+
+  .footer-logo{
+    font-size:1rem;
+  }
+
+  .footer-heading{
+    margin-bottom:16px;
+  }
+}
+  </style>
+</html>
