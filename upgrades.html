@@ -1,1 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
 
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/>
+
+<title>Can-Am SxS Upgrades | Upgrade Parts & Builds | CanAmSXS</title>
+
+<meta
+  name="description"
+  content="Everything Can-Am SxS: explore Maverick R, Maverick X3, Defender & Commander models, custom builds, upgrades, and expert guides from your trusted dealer."
+/>
+
+<style>
+
+/* ==========================
+   RESET
+========================== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background:#fff;
+  color:#000;
+}
+
+/* ==========================
+   STICKY HEADER
+========================== */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:9999;
+  background:#fff;
+  border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+/* ==========================
+   NAV WRAPPER
+========================== */
+.nav-wrapper{
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 28px;
+  height:78px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  position:relative;
+}
+
+/* ==========================
+   LOGO
+========================== */
+.logo{
+  text-decoration:none;
+  color:#000;
+  z-index:20;
+}
+
+.logo-text{
+  font-size:1.55rem;
+  font-weight:900;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-style:italic;
+
+  transform:skewX(-10deg);
+
+  display:inline-block;
+  line-height:1;
+
+  text-rendering:geometricPrecision;
+  white-space:nowrap;
+}
+
+/* ==========================
+   CENTER NAV
+========================== */
+.nav-menu{
+  list-style:none;
+
+  display:flex;
+  align-items:center;
+  gap:48px;
+
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.nav-menu li{
+  list-style:none;
+}
+
+.nav-menu a{
+  text-decoration:none;
+  color:#000;
+
+  font-size:.92rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+
+  position:relative;
+  transition:.25s ease;
+  white-space:nowrap;
+}
+
+/* subtle hover line */
+.nav-menu a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+
+  width:0;
+  height:1.5px;
+
+  background:#000;
+  transition:width .28s ease;
+}
+
+.nav-menu a:hover::after{
+  width:100%;
+}
+
+.nav-menu a:hover{
+  opacity:.72;
+}
+
+/* ==========================
+   MOBILE CTA BUTTON
+========================== */
+.mobile-cta{
+  display:none;
+
+  text-decoration:none;
+  color:#fff;
+  background:#000;
+
+  font-size:.69rem;
+  font-weight:700;
+  text-transform:uppercase;
+
+  padding:6px 10px;
+  border-radius:999px;
+
+  white-space:nowrap;
+  transition:.25s ease;
+}
+
+.mobile-cta:hover{
+  opacity:.82;
+}
+
+/* ==========================
+   HAMBURGER
+========================== */
+.menu-toggle{
+  display:none;
+  width:32px;
+  height:24px;
+
+  border:none;
+  background:none;
+  cursor:pointer;
+
+  position:relative;
+  z-index:1001;
+}
+
+.menu-toggle span{
+  position:absolute;
+  left:0;
+
+  width:100%;
+  height:2px;
+
+  background:#000;
+  transition:.3s ease;
+}
+
+.menu-toggle span:nth-child(1){
+  top:0;
+}
+
+.menu-toggle span:nth-child(2){
+  top:10px;
+}
+
+.menu-toggle span:nth-child(3){
+  top:20px;
+}
+
+/* animated X */
+.menu-toggle.active span:nth-child(1){
+  transform:rotate(45deg);
+  top:10px;
+}
+
+.menu-toggle.active span:nth-child(2){
+  opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+  transform:rotate(-45deg);
+  top:10px;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media(max-width:980px){
+
+  .nav-wrapper{
+    height:70px;
+    padding:0 22px;
+    gap:8px;
+  }
+
+  .logo-text{
+    font-size:1.18rem;
+    letter-spacing:.15em;
+  }
+
+  /* show CTA */
+  .mobile-cta{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* show hamburger */
+  .menu-toggle{
+    display:block;
+  }
+
+  /* mobile nav */
+  .nav-menu{
+    position:fixed;
+    top:70px;
+    left:0;
+
+    transform:none;
+    width:100%;
+
+    background:#fff;
+    border-top:1px solid rgba(0,0,0,.06);
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:0;
+
+    overflow:hidden;
+    max-height:0;
+
+    transition:max-height .35s ease;
+  }
+
+  .nav-menu.active{
+    max-height:420px;
+  }
+
+  .nav-menu li{
+    width:100%;
+    border-bottom:1px solid rgba(0,0,0,.05);
+  }
+
+  .nav-menu a{
+    display:block;
+    width:100%;
+
+    padding:18px 22px;
+    font-size:.92rem;
+    letter-spacing:.08em;
+  }
+
+  .nav-menu a::after{
+    display:none;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="nav-wrapper">
+
+    <!-- LOGO -->
+    <a
+      href="/"
+      class="logo"
+      aria-label="CAN-AM SXS Home"
+    >
+      <p class="logo-text">
+        CAN-AM SXS
+      </p>
+    </a>
+
+    <!-- NAVIGATION -->
+    <nav aria-label="Primary Navigation">
+
+      <ul
+        class="nav-menu"
+        id="navMenu"
+      >
+
+        <li>
+          <a
+            href="/canam-sxs-for-sale/"
+            title="Shop Can-Am SxS for Sale"
+          >
+            CAN-AM SXS FOR SALE
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/models/"
+            title="Browse Can-AM Models"
+          >
+           MODELS
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/upgrades/"
+            title="Can-Am Upgrades & Parts"
+          >
+            UPGRADES
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/guides/"
+            title="Can-Am SxS and Trail Guides"
+          >
+            Guides
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- MOBILE CTA -->
+    <a
+      href="/canam-sxs-for-sale/"
+      class="mobile-cta"
+      aria-label="Shop Can-Am Side by Side">
+     View Inventory
+    </a>
+
+    <!-- HAMBURGER -->
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open Navigation Menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+</header>
+
+<script>
+
+const menuToggle =
+  document.getElementById("menuToggle");
+
+const navMenu =
+  document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+
+  menuToggle.classList.toggle("active");
+  navMenu.classList.toggle("active");
+
+  const expanded =
+    menuToggle.getAttribute(
+      "aria-expanded"
+    ) === "true";
+
+  menuToggle.setAttribute(
+    "aria-expanded",
+    !expanded
+  );
+});
+
+</script>
+  
+  
+  
+  
+  <!-- =====================================================================
+     CAN-AM SXS UPGRADES & PARTS  (canamsxs.com/upgrades/)
+     Single-page silo — every model's upgrade categories live on this one
+     URL as in-page anchor sections. No sub-pages by design (per request):
+     clicking a model in the sticky nav below just scrolls to that section.
+     TEMPLATE FRAGMENT ONLY — no <header>/<nav>/<footer>, per your pattern.
+     Matches the csxs- design system used on /canam-sxs-for-sale/.
+
+     ⚠ All part-category images below are placeholder line-icon graphics
+     (no product photos provided). Swap .csxs-upg-icon-wrap contents for
+     real photos before publishing if you want photo cards instead of icons.
+====================================================================== -->
+<section class="csxs-upgrades" aria-label="Can-Am SxS Upgrades & Parts">
+  <style>
+    .csxs-upgrades {
+      --csxs-black: #0d0d0d;
+      --csxs-charcoal: #1d1d1f;
+      --csxs-gray-bg: #f5f5f7;
+      --csxs-gray-line: #d2d2d7;
+      --csxs-gray-text: #6e6e73;
+      --csxs-red: #e4002b;
+      --csxs-red-dark: #b8001f;
+      --csxs-white: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif;
+      background: var(--csxs-gray-bg);
+      color: var(--csxs-charcoal);
+      padding: 0 0 72px;
+      scroll-behavior: smooth;
+    }
+    .csxs-upgrades *,
+    .csxs-upgrades *::before,
+    .csxs-upgrades *::after { box-sizing: border-box; }
+
+    .csxs-hero {
+      text-align: center;
+      padding: 48px 20px 28px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .csxs-hero h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      color: var(--csxs-black);
+    }
+    .csxs-hero p {
+      font-size: 17px;
+      color: var(--csxs-gray-text);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Sticky jump nav */
+    .csxs-modelnav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 14px 20px;
+      margin-bottom: 8px;
+      background: rgba(245, 245, 247, 0.85);
+      backdrop-filter: saturate(180%) blur(14px);
+      -webkit-backdrop-filter: saturate(180%) blur(14px);
+      border-top: 1px solid var(--csxs-gray-line);
+      border-bottom: 1px solid var(--csxs-gray-line);
+      scrollbar-width: none;
+      list-style: none;
+    }
+    .csxs-modelnav::-webkit-scrollbar { display: none; }
+    .csxs-modelnav a {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 6px;
+      background: var(--csxs-white);
+      border: 1px solid var(--csxs-gray-line);
+      color: var(--csxs-black);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    }
+    .csxs-modelnav a:hover,
+    .csxs-modelnav a:focus-visible,
+    .csxs-modelnav a.is-active {
+      background: var(--csxs-black);
+      color: var(--csxs-white);
+      border-color: var(--csxs-black);
+      transform: translateY(-1px);
+    }
+
+    /* Model section */
+    .csxs-model-section {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 48px 20px 8px;
+      scroll-margin-top: 68px;
+      border-bottom: 1px solid var(--csxs-gray-line);
+    }
+    .csxs-model-section:last-of-type { border-bottom: none; }
+
+    .csxs-model-heading {
+      font-size: clamp(22px, 3vw, 28px);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--csxs-black);
+      margin: 0 0 8px;
+    }
+    .csxs-model-sub {
+      font-size: 15px;
+      color: var(--csxs-gray-text);
+      max-width: 640px;
+      margin: 0 0 28px;
+      line-height: 1.6;
+    }
+
+    .csxs-upg-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .csxs-upg-card {
+      background: var(--csxs-white);
+      border: 1px solid var(--csxs-gray-line);
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+    .csxs-upg-card:hover {
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+      transform: translateY(-2px);
+    }
+
+    .csxs-upg-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 6px;
+      background: linear-gradient(155deg, #1d1d1f, #3a3a3c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--csxs-red);
+      margin-bottom: 4px;
+    }
+    .csxs-upg-icon { width: 30px; height: 30px; }
+
+    .csxs-upg-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--csxs-black);
+      margin: 0;
+      line-height: 1.3;
+    }
+    .csxs-upg-desc {
+      font-size: 13px;
+      color: var(--csxs-gray-text);
+      line-height: 1.55;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    .csxs-upg-ctas {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    .csxs-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: opacity 0.2s ease, transform 0.15s ease, background 0.2s ease;
+      white-space: nowrap;
+      text-align: center;
+    }
+    .csxs-btn:active { transform: scale(0.97); }
+    .csxs-btn-primary {
+      background: var(--csxs-red);
+      color: var(--csxs-white);
+    }
+    .csxs-btn-primary:hover { background: var(--csxs-red-dark); }
+    .csxs-btn-secondary {
+      background: var(--csxs-gray-bg);
+      color: var(--csxs-black);
+      border: 1px solid var(--csxs-gray-line);
+    }
+    .csxs-btn-secondary:hover { background: #ebebee; }
+
+    /* Bottom back-to-top */
+    .csxs-backtotop {
+      display: block;
+      max-width: 1080px;
+      margin: 28px auto 0;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .csxs-backtotop a {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--csxs-gray-text);
+      text-decoration: none;
+    }
+    .csxs-backtotop a:hover { color: var(--csxs-black); text-decoration: underline; }
+
+    @media (max-width: 900px) {
+      .csxs-upg-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .csxs-hero { padding: 36px 16px 20px; }
+      .csxs-model-section { padding: 36px 16px 8px; }
+      .csxs-upg-grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .csxs-upgrades { scroll-behavior: auto; }
+      .csxs-upg-card, .csxs-btn, .csxs-modelnav a { transition: none; }
+    }
+  </style>
+
+
+  <svg style="display:none" aria-hidden="true">
+    <defs>
+      <symbol id="icon-suspension" viewBox="0 0 48 48">
+        <path d="M14 6 V14 M14 14 l6 3 l-6 3 l6 3 l-6 3 l6 3 l-6 3 V42" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="14" cy="6" r="2.6" fill="currentColor"/>
+        <circle cx="14" cy="42" r="2.6" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-tires" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <circle cx="24" cy="24" r="6" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M24 8 V14 M24 34 V40 M8 24 H14 M34 24 H40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-exhaust" viewBox="0 0 48 48">
+        <path d="M8 30 H26 Q30 30 32 26 L36 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <ellipse cx="8" cy="30" rx="3" ry="5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+        <circle cx="38" cy="15" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="icon-bumper" viewBox="0 0 48 48">
+        <path d="M8 32 L8 22 Q8 16 16 16 H32 Q40 16 40 22 V32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M8 32 H40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M16 22 V32 M32 22 V32" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="icon-cage" viewBox="0 0 48 48">
+        <path d="M10 40 V18 L24 8 L38 18 V40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M10 28 H38 M17 18 V40 M31 18 V40" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="icon-audio" viewBox="0 0 48 48">
+        <path d="M10 20 H16 L26 12 V36 L16 28 H10 Z" fill="currentColor"/>
+        <path d="M32 16 Q37 24 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M36 11 Q44 24 36 37" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-lighting" viewBox="0 0 48 48">
+        <circle cx="24" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M19 30 H29 L27 38 H21 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M24 6 V10 M8 20 H12 M36 20 H40 M12.5 8.5 L15 11 M35.5 8.5 L33 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-roof" viewBox="0 0 48 48">
+        <path d="M6 20 L24 8 L42 20 V38 H6 Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M6 20 H42" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M16 38 V26 H32 V38" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="csxs-hero">
+    <h1>Can-Am SxS Upgrades &amp; Parts</h1>
+    <p>Suspension, tires, protection, lighting, and electronics for Maverick R, Maverick X3, Defender &amp; Commander — jump to your model below.</p>
+  </div>
+
+  <nav class="csxs-modelnav" aria-label="Jump to model upgrades">
+    <a href="#maverick-r">Maverick R Upgrades</a>
+    <a href="#maverick-x3">Maverick X3 Upgrades</a>
+    <a href="#defender">Defender Upgrades</a>
+    <a href="#commander">Commander Upgrades</a>  </nav>
+
+  <section id="maverick-r" class="csxs-model-section">
+    <h2 class="csxs-model-heading">Maverick R Upgrades</h2>
+    <p class="csxs-model-sub">The most popular ways owners upgrade a Can-Am Maverick R — tires and suspension for capability, protection and lighting for the trail, and audio/electronics for comfort.</p>
+    <div class="csxs-upg-grid">
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-suspension"/></svg></div>
+          <h3 class="csxs-upg-title">Suspension</h3>
+          <p class="csxs-upg-desc">Dial in damping and ride height beyond the stock Smart-Shox tune for high-speed desert running.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Suspension on the Maverick R">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Suspension for the Maverick R">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-tires"/></svg></div>
+          <h3 class="csxs-upg-title">Tires &amp; Wheels</h3>
+          <p class="csxs-upg-desc">Beadlock wheels and desert / all-terrain tire packages sized for the Maverick R&#x27;s wide stance.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Tires &amp; Wheels on the Maverick R">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Tires &amp; Wheels for the Maverick R">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-exhaust"/></svg></div>
+          <h3 class="csxs-upg-title">Exhaust &amp; Performance</h3>
+          <p class="csxs-upg-desc">Slip-on and full systems built for the turbocharged Rotax platform, plus supporting tune options.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Exhaust &amp; Performance on the Maverick R">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Exhaust &amp; Performance for the Maverick R">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-bumper"/></svg></div>
+          <h3 class="csxs-upg-title">Rock Sliders &amp; Bumpers</h3>
+          <p class="csxs-upg-desc">Front and rear bumpers plus rock sliders to protect the Maverick R&#x27;s wide chassis on the trail.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Rock Sliders &amp; Bumpers on the Maverick R">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Rock Sliders &amp; Bumpers for the Maverick R">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-cage"/></svg></div>
+          <h3 class="csxs-upg-title">Roll Cage Accessories</h3>
+          <p class="csxs-upg-desc">Cage bracing, grab handles, and mounting points for lights, harnesses, and intercom gear.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Roll Cage Accessories on the Maverick R">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Roll Cage Accessories for the Maverick R">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-audio"/></svg></div>
+          <h3 class="csxs-upg-title">Electronics &amp; Audio</h3>
+          <p class="csxs-upg-desc">GPS, intercom, and audio systems built to cut through high-speed cabin and wind noise.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Electronics &amp; Audio on the Maverick R">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Electronics &amp; Audio for the Maverick R">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-lighting"/></svg></div>
+          <h3 class="csxs-upg-title">Lighting</h3>
+          <p class="csxs-upg-desc">LED light bars and pods for low-light desert and dune running.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Lighting on the Maverick R">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Lighting for the Maverick R">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-roof"/></svg></div>
+          <h3 class="csxs-upg-title">Roof, Windshield &amp; Doors</h3>
+          <p class="csxs-upg-desc">Roofs, half or full windshields, and door nets for dust and weather protection.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Roof, Windshield &amp; Doors on the Maverick R">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Roof, Windshield &amp; Doors for the Maverick R">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+    </div>
+  </section>
+
+  <section id="maverick-x3" class="csxs-model-section">
+    <h2 class="csxs-model-heading">Maverick X3 Upgrades</h2>
+    <p class="csxs-model-sub">The most popular ways owners upgrade a Can-Am Maverick X3 — tires and suspension for capability, protection and lighting for the trail, and audio/electronics for comfort.</p>
+    <div class="csxs-upg-grid">
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-suspension"/></svg></div>
+          <h3 class="csxs-upg-title">Suspension</h3>
+          <p class="csxs-upg-desc">Long-travel suspension upgrades and re-valved shocks for X3 Turbo RR trims pushing hard terrain.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Suspension on the Maverick X3">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Suspension for the Maverick X3">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-tires"/></svg></div>
+          <h3 class="csxs-upg-title">Tires &amp; Wheels</h3>
+          <p class="csxs-upg-desc">Wide beadlock wheel and paddle/AT tire combos to match the X3&#x27;s long-travel stance.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Tires &amp; Wheels on the Maverick X3">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Tires &amp; Wheels for the Maverick X3">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-exhaust"/></svg></div>
+          <h3 class="csxs-upg-title">Exhaust &amp; Performance</h3>
+          <p class="csxs-upg-desc">Full exhaust systems and supporting bolt-ons for the X3&#x27;s turbocharged Rotax engine.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Exhaust &amp; Performance on the Maverick X3">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Exhaust &amp; Performance for the Maverick X3">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-bumper"/></svg></div>
+          <h3 class="csxs-upg-title">Rock Sliders &amp; Bumpers</h3>
+          <p class="csxs-upg-desc">Skid-plated bumpers and rock sliders built for aggressive trail and dune riding.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Rock Sliders &amp; Bumpers on the Maverick X3">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Rock Sliders &amp; Bumpers for the Maverick X3">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-cage"/></svg></div>
+          <h3 class="csxs-upg-title">Roll Cage Accessories</h3>
+          <p class="csxs-upg-desc">Bolt-in cage bracing, harness bars, and accessory mounts for the X3 cage.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Roll Cage Accessories on the Maverick X3">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Roll Cage Accessories for the Maverick X3">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-audio"/></svg></div>
+          <h3 class="csxs-upg-title">Electronics &amp; Audio</h3>
+          <p class="csxs-upg-desc">Intercom and sound systems built to handle the X3&#x27;s high-RPM cabin environment.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Electronics &amp; Audio on the Maverick X3">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Electronics &amp; Audio for the Maverick X3">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-lighting"/></svg></div>
+          <h3 class="csxs-upg-title">Lighting</h3>
+          <p class="csxs-upg-desc">Chase and forward-facing LED lighting for competition and night trail runs.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Lighting on the Maverick X3">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Lighting for the Maverick X3">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-roof"/></svg></div>
+          <h3 class="csxs-upg-title">Roof, Windshield &amp; Doors</h3>
+          <p class="csxs-upg-desc">Roofs, windshields, and doors sized for MAX and two-seat X3 cab configurations.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Roof, Windshield &amp; Doors on the Maverick X3">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Roof, Windshield &amp; Doors for the Maverick X3">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+    </div>
+  </section>
+
+  <section id="defender" class="csxs-model-section">
+    <h2 class="csxs-model-heading">Defender Upgrades</h2>
+    <p class="csxs-model-sub">The most popular ways owners upgrade a Can-Am Defender — tires and suspension for capability, protection and lighting for the trail, and audio/electronics for comfort.</p>
+    <div class="csxs-upg-grid">
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-suspension"/></svg></div>
+          <h3 class="csxs-upg-title">Suspension</h3>
+          <p class="csxs-upg-desc">Leveling and lift kits that clear larger tires without giving up Defender&#x27;s towing manners.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Suspension on the Defender">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Suspension for the Defender">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-tires"/></svg></div>
+          <h3 class="csxs-upg-title">Tires &amp; Wheels</h3>
+          <p class="csxs-upg-desc">Mud-terrain and all-terrain tire upgrades suited to Defender&#x27;s work-truck use case.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Tires &amp; Wheels on the Defender">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Tires &amp; Wheels for the Defender">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-exhaust"/></svg></div>
+          <h3 class="csxs-upg-title">Exhaust &amp; Performance</h3>
+          <p class="csxs-upg-desc">Performance exhaust and tuning to open up low-end torque for towing and hauling.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Exhaust &amp; Performance on the Defender">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Exhaust &amp; Performance for the Defender">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-bumper"/></svg></div>
+          <h3 class="csxs-upg-title">Rock Sliders &amp; Bumpers</h3>
+          <p class="csxs-upg-desc">Heavy-duty front bumpers, winch mounts, and rock sliders for trail and jobsite work.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Rock Sliders &amp; Bumpers on the Defender">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Rock Sliders &amp; Bumpers for the Defender">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-cage"/></svg></div>
+          <h3 class="csxs-upg-title">Cage &amp; Rack Accessories</h3>
+          <p class="csxs-upg-desc">Cab bracing and cage-mounted racks for tools, gear, and jobsite equipment.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Cage &amp; Rack Accessories on the Defender">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Cage &amp; Rack Accessories for the Defender">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-audio"/></svg></div>
+          <h3 class="csxs-upg-title">Electronics &amp; Audio</h3>
+          <p class="csxs-upg-desc">Cab-friendly audio and lighting control systems built for enclosed HD9/HD11 cabs.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Electronics &amp; Audio on the Defender">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Electronics &amp; Audio for the Defender">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-lighting"/></svg></div>
+          <h3 class="csxs-upg-title">Lighting</h3>
+          <p class="csxs-upg-desc">Work lights and LED light bars for early-morning and after-dark job site use.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Lighting on the Defender">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Lighting for the Defender">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-roof"/></svg></div>
+          <h3 class="csxs-upg-title">Roof, Windshield &amp; Doors</h3>
+          <p class="csxs-upg-desc">Hard roofs, full windshields, and doors — especially relevant on CAB trims.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Roof, Windshield &amp; Doors on the Defender">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Roof, Windshield &amp; Doors for the Defender">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+    </div>
+  </section>
+
+  <section id="commander" class="csxs-model-section">
+    <h2 class="csxs-model-heading">Commander Upgrades</h2>
+    <p class="csxs-model-sub">The most popular ways owners upgrade a Can-Am Commander — tires and suspension for capability, protection and lighting for the trail, and audio/electronics for comfort.</p>
+    <div class="csxs-upg-grid">
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-suspension"/></svg></div>
+          <h3 class="csxs-upg-title">Suspension</h3>
+          <p class="csxs-upg-desc">Suspension upgrades that balance trail comfort with the Commander&#x27;s utility workload.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Suspension on the Commander">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Suspension for the Commander">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-tires"/></svg></div>
+          <h3 class="csxs-upg-title">Tires &amp; Wheels</h3>
+          <p class="csxs-upg-desc">All-terrain and mud-terrain tire packages for mixed trail and work-duty riding.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Tires &amp; Wheels on the Commander">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Tires &amp; Wheels for the Commander">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-exhaust"/></svg></div>
+          <h3 class="csxs-upg-title">Exhaust &amp; Performance</h3>
+          <p class="csxs-upg-desc">Exhaust and tuning options to improve throttle response for trail and towing use.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Exhaust &amp; Performance on the Commander">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Exhaust &amp; Performance for the Commander">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-bumper"/></svg></div>
+          <h3 class="csxs-upg-title">Rock Sliders &amp; Bumpers</h3>
+          <p class="csxs-upg-desc">Front bumpers and rock sliders built for a hybrid of trail riding and utility work.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Rock Sliders &amp; Bumpers on the Commander">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Rock Sliders &amp; Bumpers for the Commander">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-cage"/></svg></div>
+          <h3 class="csxs-upg-title">Cage &amp; Rack Accessories</h3>
+          <p class="csxs-upg-desc">Roof racks, cage bracing, and mounts for cargo and recovery gear.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Cage &amp; Rack Accessories on the Commander">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Cage &amp; Rack Accessories for the Commander">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-audio"/></svg></div>
+          <h3 class="csxs-upg-title">Electronics &amp; Audio</h3>
+          <p class="csxs-upg-desc">Bluetooth audio and intercom setups for trail rides and passenger comfort.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Electronics &amp; Audio on the Commander">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Electronics &amp; Audio for the Commander">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-lighting"/></svg></div>
+          <h3 class="csxs-upg-title">Lighting</h3>
+          <p class="csxs-upg-desc">LED light bars and pods for trail visibility and early or late-day rides.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Lighting on the Commander">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Lighting for the Commander">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+        <article class="csxs-upg-card">
+          <div class="csxs-upg-icon-wrap"><svg class="csxs-upg-icon"><use href="#icon-roof"/></svg></div>
+          <h3 class="csxs-upg-title">Roof, Windshield &amp; Doors</h3>
+          <p class="csxs-upg-desc">Roofs, windshields, and doors for year-round trail and utility use.</p>
+          <div class="csxs-upg-ctas">
+            <a class="csxs-btn csxs-btn-primary" href="/get-started" aria-label="Request a quote for Roof, Windshield &amp; Doors on the Commander">GET A QUOTE</a>
+            <a class="csxs-btn csxs-btn-secondary" href="tel:+16572396371" aria-label="Call a specialist about Roof, Windshield &amp; Doors for the Commander">TALK TO A SPECIALIST</a>
+          </div>
+        </article>
+    </div>
+  </section>
+  <p class="csxs-backtotop"><a href="#top">&uarr; Back to top</a></p>
+</section>
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+</body>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- COLUMN 1 -->
+    <div class="footer-column footer-brand">
+      <a href="/" class="footer-logo">
+        CAN-AM SXS
+      </a>
+      <div class="footer-contact">
+        <a
+          href="tel:+16572396371"
+          class="footer-link"
+        >
+          Phone: (657) 239-6371
+        </a>
+        <a
+          href="mailto:joshc@motounitedsocal.com"
+          class="footer-link"
+        >
+          Email: joshc@motounitedsocal.com
+        </a>
+      </div>
+    </div>
+    <!-- COLUMN 2 -->
+    <div class="footer-column">
+      <h4 class="footer-heading">
+        Can-Am SxS For Sale
+      </h4>
+      <ul class="footer-links">
+        <li>
+          <a href="/canam-sxs-for-sale/">
+            View All Inventory
+          </a>
+        </li>
+        <li>
+          <a href="/canam-sxs-for-sale/maverick-r/">
+            Maverick R For Sale
+          </a>
+        </li>
+        <li>
+          <a href="/canam-sxs-for-sale/maverick-x3/">
+            Maverick X3 For Sale
+          </a>
+        </li>
+        <li>
+          <a href="/canam-sxs-for-sale/defender/">
+            Defender For Sale
+          </a>
+        </li>
+        <li>
+          <a href="/canam-sxs-for-sale/commander/">
+            Commander For Sale
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- COLUMN 3 -->
+    <div class="footer-column">
+      <h4 class="footer-heading">
+        Models
+      </h4>
+      <ul class="footer-links">
+        <li>
+          <a href="/models/">
+            Browse All Models
+          </a>
+        </li>
+        <li>
+          <a href="/build-price-your-own">
+            Build &amp; Price
+          </a>
+        </li>
+        <li>
+          <a href="/custom-builds/">
+            Custom Builds
+          </a>
+        </li>
+        <li>
+          <a href="/promotions">
+            Promotions
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- COLUMN 4 -->
+    <div class="footer-column">
+      <h4 class="footer-heading">
+        Can-Am Upgrades
+      </h4>
+      <ul class="footer-links">
+        <li><a href="/upgrades/suspension">Suspension</a></li>
+        <li><a href="/upgrades/tires-wheels">Tires / Wheels</a></li>
+        <li><a href="/upgrades/roof-windshield-doors">Roof / Windshield / Doors</a></li>
+        <li><a href="/upgrades/lighting">Lighting</a></li>
+        <li><a href="/upgrades/maintenance">Maintenance Parts</a></li>
+      </ul>
+    </div>
+    <!-- COLUMN 5 -->
+    <div class="footer-column">
+      <h4 class="footer-heading">
+        Guides &amp; Community
+      </h4>
+      <ul class="footer-links">
+        <li><a href="/guides/">All Guides</a></li>
+        <li><a href="/guides/trail-guides/">Trail Guides</a></li>
+        <li><a href="/guides/buying-guide-used-can-am-sxs/">Buying Guide</a></li>
+        <li><a href="/events">Events</a></li>
+      </ul>
+    </div>
+      <p class="footer-copyright">
+        © CANAMSXS<br>
+        All Rights Reserved
+      </p>
+  </div>
+</footer>
+  
+  <style>
+    /* ==========================
+   FOOTER
+========================== */
+.site-footer{
+  border-top:1px solid rgba(0,0,0,.08);
+  background:#fff;
+  margin-top:90px;
+}
+
+.footer-container{
+  max-width:1400px;
+  margin:0 auto;
+
+  padding:56px 28px;
+
+  display:grid;
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1fr;
+
+  gap:60px;
+}
+
+/* ==========================
+   COLUMN
+========================== */
+.footer-column{
+  display:flex;
+  flex-direction:column;
+}
+
+/* ==========================
+   BRAND COLUMN
+========================== */
+.footer-logo{
+  text-decoration:none;
+  color:#000;
+
+  font-size:1.2rem;
+  font-weight:900;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  font-style:italic;
+
+  transform:skewX(-10deg);
+
+  line-height:1;
+  margin-bottom:20px;
+
+  white-space:nowrap;
+}
+
+.footer-copyright{
+  font-size:.78rem;
+  line-height:1.7;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:rgba(0,0,0,.65);
+
+  margin-bottom:22px;
+}
+
+.footer-contact{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+.footer-heading{
+  font-size:.78rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+
+  margin-bottom:22px;
+}
+
+/* ==========================
+   LINKS
+========================== */
+.footer-links{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.footer-links a,
+.footer-link{
+  text-decoration:none;
+  color:#000;
+
+  font-size:.85rem;
+  font-weight:500;
+  letter-spacing:.04em;
+
+  transition:.25s ease;
+  position:relative;
+  width:fit-content;
+}
+
+/* subtle hover underline */
+.footer-links a::after,
+.footer-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+
+  width:0;
+  height:1px;
+  background:#000;
+
+  transition:.25s ease;
+}
+
+.footer-links a:hover,
+.footer-link:hover{
+  opacity:.7;
+}
+
+.footer-links a:hover::after,
+.footer-link:hover::after{
+  width:100%;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media(max-width:980px){
+
+  .footer-container{
+    grid-template-columns:1fr;
+    gap:42px;
+    padding:42px 22px;
+  }
+
+  .footer-logo{
+    font-size:1rem;
+  }
+
+  .footer-heading{
+    margin-bottom:16px;
+  }
+}
+  </style>
+</html>
