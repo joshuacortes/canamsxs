@@ -1,0 +1,393 @@
+<!-- =====================================================================
+     CAN-AM MAVERICK X3 — MODEL / SPECS PAGE  (canamsxs.com/maverick-x3)
+     Informational silo page — targets "Can-Am Maverick X3" / spec research
+     intent. Distinct from the commercial /canam-sxs-for-sale/maverick-x3/
+     page: no pricing or unit listings here, just platform specs + a CTA
+     that hands off to the for-sale page.
+     TEMPLATE FRAGMENT ONLY — no <header>/<nav>/<footer>, matches the
+     csxs- design system used across the rest of the site.
+
+     Specs sourced from Can-Am's official Maverick X3 model page and
+     current 2026 model-year coverage. Pricing is intentionally omitted
+     here — it lives on the for-sale page and changes independent of specs.
+====================================================================== -->
+<section class="csxs-model" aria-label="Can-Am Maverick X3 specs and overview">
+  <style>
+    .csxs-model {
+      --csxs-black: #0d0d0d;
+      --csxs-charcoal: #1d1d1f;
+      --csxs-gray-bg: #f5f5f7;
+      --csxs-gray-line: #d2d2d7;
+      --csxs-gray-text: #6e6e73;
+      --csxs-red: #e4002b;
+      --csxs-red-dark: #b8001f;
+      --csxs-white: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Helvetica Neue", Arial, sans-serif;
+      background: var(--csxs-gray-bg);
+      color: var(--csxs-charcoal);
+      padding: 0 0 72px;
+    }
+    .csxs-model *,
+    .csxs-model *::before,
+    .csxs-model *::after { box-sizing: border-box; }
+
+    /* Breadcrumb */
+    .csxs-crumb {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px 20px 0;
+      font-size: 13px;
+      color: var(--csxs-gray-text);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .csxs-crumb a { color: var(--csxs-gray-text); text-decoration: none; }
+    .csxs-crumb a:hover { color: var(--csxs-black); text-decoration: underline; }
+    .csxs-crumb span[aria-current] { color: var(--csxs-black); font-weight: 600; }
+
+    /* Hero */
+    .csxs-hero {
+      max-width: 980px;
+      margin: 20px auto 0;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+    .csxs-hero-media {
+      background: linear-gradient(155deg, #1d1d1f, #3a3a3c);
+      border-radius: 8px;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .csxs-hero-media img { width: 100%; height: 100%; object-fit: cover; }
+    .csxs-hero-media svg { width: 40%; height: 40%; }
+
+    .csxs-hero-eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--csxs-red);
+      margin: 0 0 8px;
+    }
+    .csxs-hero h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--csxs-black);
+      margin: 0 0 14px;
+      line-height: 1.15;
+    }
+    .csxs-hero p {
+      font-size: 16px;
+      color: var(--csxs-gray-text);
+      line-height: 1.6;
+      margin: 0 0 22px;
+    }
+    .csxs-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      background: var(--csxs-red);
+      color: var(--csxs-white);
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+    .csxs-btn:hover { background: var(--csxs-red-dark); }
+    .csxs-btn:active { transform: scale(0.98); }
+
+    /* Quick facts strip */
+    .csxs-quickfacts {
+      max-width: 980px;
+      margin: 36px auto 0;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+    .csxs-quickfacts div {
+      background: var(--csxs-white);
+      border: 1px solid var(--csxs-gray-line);
+      border-radius: 8px;
+      padding: 16px 8px;
+    }
+    .csxs-quickfacts dt {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--csxs-gray-text);
+      margin: 0 0 4px;
+    }
+    .csxs-quickfacts dd {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--csxs-black);
+      margin: 0;
+    }
+
+    /* Spec sections */
+    .csxs-spec-section {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 44px 20px 0;
+    }
+    .csxs-spec-section h2 {
+      font-size: clamp(20px, 3vw, 24px);
+      font-weight: 700;
+      color: var(--csxs-black);
+      margin: 0 0 16px;
+    }
+    .csxs-spec-section > p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--csxs-charcoal);
+      max-width: 700px;
+      margin: 0 0 18px;
+    }
+
+    .csxs-spec-table {
+      width: 100%;
+      background: var(--csxs-white);
+      border: 1px solid var(--csxs-gray-line);
+      border-radius: 8px;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    .csxs-spec-table tr:not(:last-child) td,
+    .csxs-spec-table tr:not(:last-child) th {
+      border-bottom: 1px solid var(--csxs-gray-line);
+    }
+    .csxs-spec-table th {
+      text-align: left;
+      color: var(--csxs-gray-text);
+      font-weight: 500;
+      padding: 12px 18px;
+      width: 38%;
+      background: var(--csxs-gray-bg);
+    }
+    .csxs-spec-table td {
+      padding: 12px 18px;
+      font-weight: 600;
+      color: var(--csxs-black);
+    }
+
+    /* Trim cards */
+    .csxs-trim-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .csxs-trim-card {
+      background: var(--csxs-white);
+      border: 1px solid var(--csxs-gray-line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .csxs-trim-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--csxs-black);
+      margin: 0 0 8px;
+    }
+    .csxs-trim-card p {
+      font-size: 13.5px;
+      color: var(--csxs-gray-text);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Bottom CTA banner */
+    .csxs-cta-banner {
+      max-width: 980px;
+      margin: 48px auto 0;
+      padding: 0 20px;
+    }
+    .csxs-cta-inner {
+      background: var(--csxs-black);
+      border-radius: 8px;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .csxs-cta-inner h2 {
+      color: var(--csxs-white);
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 4px;
+    }
+    .csxs-cta-inner p {
+      color: #a1a1a6;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    @media (max-width: 760px) {
+      .csxs-hero { grid-template-columns: 1fr; }
+      .csxs-quickfacts { grid-template-columns: repeat(2, 1fr); }
+      .csxs-trim-grid { grid-template-columns: 1fr; }
+      .csxs-spec-table th { width: 46%; }
+    }
+  </style>
+
+  <!-- Breadcrumb -->
+  <nav class="csxs-crumb" aria-label="Breadcrumb">
+    <a href="https://canamsxs.com/">Home</a><span>/</span>
+    <a href="https://canamsxs.com/models/">Models</a><span>/</span>
+    <span aria-current="page">Maverick X3</span>
+  </nav>
+
+  <!-- Hero -->
+  <div class="csxs-hero">
+    <div class="csxs-hero-media" aria-hidden="true">
+      <svg viewBox="0 0 64 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 28 L10 16 Q12 12 18 12 H46 Q52 12 54 16 L60 28" stroke="#f5f5f7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="16" y="16" width="12" height="9" rx="1.5" stroke="#f5f5f7" stroke-width="2"/>
+        <rect x="30" y="16" width="12" height="9" rx="1.5" stroke="#f5f5f7" stroke-width="2"/>
+        <circle cx="14" cy="29" r="6" stroke="#e4002b" stroke-width="2.4"/>
+        <circle cx="50" cy="29" r="6" stroke="#e4002b" stroke-width="2.4"/>
+        <line x1="4" y1="28" x2="60" y2="28" stroke="#f5f5f7" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <p class="csxs-hero-eyebrow">2026 Model Year</p>
+      <h1>Can-Am Maverick X3</h1>
+      <p>Can-Am's race-proven sport side-by-side, built around a turbocharged Rotax ACE triple and the pDrive/QRS-X CVT drivetrain — available from 135 hp up to 200 hp Turbo RR power, with a trim for dunes, trails, mud, and rock alike.</p>
+      <a class="csxs-btn" href="https://canamsxs.com/canam-sxs-for-sale/maverick-x3/">Shop Maverick X3 For Sale</a>
+    </div>
+  </div>
+
+  <!-- Quick facts -->
+  <dl class="csxs-quickfacts">
+    <div><dt>Horsepower</dt><dd>135–200 hp</dd></div>
+    <div><dt>Engine</dt><dd>900cc Turbo Triple</dd></div>
+    <div><dt>Transmission</dt><dd>pDrive CVT (QRS-X)</dd></div>
+    <div><dt>Suspension Travel</dt><dd>Up to 24 in.</dd></div>
+  </dl>
+
+  <!-- Engine & Transmission -->
+  <div class="csxs-spec-section">
+    <h2>Engine &amp; Transmission</h2>
+    <p>
+      The Maverick X3 is powered by Can-Am's Rotax ACE 900, a 900cc turbocharged
+      triple-cylinder engine with an integrated intercooler and high-performance air
+      filter. Output ranges from 135 hp on entry-level Turbo trims up to 200 hp on
+      Turbo RR models. Rather than a dual-clutch gearbox, the X3 uses Can-Am's pDrive
+      primary clutch paired with the QRS-X CVT, tuned for high airflow and reduced belt
+      wear across a wide power band.
+    </p>
+    <table class="csxs-spec-table">
+      <tr><th>Engine</th><td>Rotax ACE, 900cc turbocharged triple-cylinder, liquid-cooled</td></tr>
+      <tr><th>Horsepower</th><td>135 hp (Turbo) up to 200 hp (Turbo RR)</td></tr>
+      <tr><th>Transmission</th><td>pDrive primary &amp; QRS-X CVT, L/H/N/R/P</td></tr>
+      <tr><th>Cooling</th><td>Liquid-cooled with integrated intercooler</td></tr>
+      <tr><th>Drive Modes</th><td>True 2WD / 4WD with front diff. lock / 4WD Trail Activ / 4WD Trail</td></tr>
+      <tr><th>Front Differential</th><td>Smart-Lok™ front differential</td></tr>
+    </table>
+  </div>
+
+  <!-- Suspension & Chassis -->
+  <div class="csxs-spec-section">
+    <h2>Suspension &amp; Chassis</h2>
+    <p>
+      The Maverick X3 runs an arched double A-arm front suspension with sway bar and a
+      trailing arm rear, on a lightweight, race-proven chassis. Travel starts at 20
+      inches on base Turbo trims and stretches to 24 inches on top-spec RR models.
+      Shock hardware scales with trim, from SHOWA HPG piggyback units on entry trims up
+      through FOX 2.5 Podium RC2 and FOX 3.0 Podium shocks, with Smart-Shox™
+      electronically adjustable damping available on select packages.
+    </p>
+    <table class="csxs-spec-table">
+      <tr><th>Front Suspension</th><td>Arched double A-arm with sway bar</td></tr>
+      <tr><th>Rear Suspension</th><td>Trailing arm, lightweight race-proven chassis</td></tr>
+      <tr><th>Suspension Travel</th><td>20 in. (base Turbo) up to 24 in. (RR trims)</td></tr>
+      <tr><th>Shocks</th><td>SHOWA HPG; FOX 2.5 Podium RC2 or FOX 3.0 Podium on higher trims</td></tr>
+      <tr><th>Steering</th><td>Tri-mode DPS power steering</td></tr>
+    </table>
+  </div>
+
+  <!-- Trim Lineup -->
+  <div class="csxs-spec-section">
+    <h2>Maverick X3 Trim Lineup</h2>
+    <p>One turbocharged platform, tuned across a wide trim range for dunes, trails, mud, and everything between — the differences come down to horsepower, shocks, tires, and width.</p>
+    <div class="csxs-trim-grid">
+      <div class="csxs-trim-card">
+        <h3>Maverick X3 Turbo</h3>
+        <p>The entry point to the X3 lineup, with the 135-hp Rotax ACE turbo triple, SHOWA HPG shocks, and 20 in. of travel — a strong trail-focused starting platform.</p>
+      </div>
+      <div class="csxs-trim-card">
+        <h3>Maverick X3 X</h3>
+        <p>Steps up shock hardware and trail-readiness over the base Turbo, with FOX 2.5 Podium RC2 piggyback shocks and factory tech like a touchscreen infotainment system.</p>
+      </div>
+      <div class="csxs-trim-card">
+        <h3>Maverick X3 RS</h3>
+        <p>The dune- and desert-oriented package, built around a wider 72-in. stance for high-speed stability across open terrain.</p>
+      </div>
+      <div class="csxs-trim-card">
+        <h3>Maverick X3 X RR / RS Turbo RR</h3>
+        <p>The top of the lineup, pairing the full 200-hp Turbo RR engine with premium FOX shocks and beadlock-capable wheels for riders who want maximum factory power.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA banner -->
+  <div class="csxs-cta-banner">
+    <div class="csxs-cta-inner">
+      <div>
+        <h2>See What's In Stock</h2>
+        <p>Browse current Maverick X3 units, pricing, and financing options.</p>
+      </div>
+      <a class="csxs-btn" href="https://canamsxs.com/canam-sxs-for-sale/maverick-x3/">Shop Maverick X3 For Sale</a>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://canamsxs.com/"},
+    {"@type":"ListItem","position":2,"name":"Maverick X3","item":"https://canamsxs.com/maverick-x3"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Vehicle",
+  "name": "Can-Am Maverick X3",
+  "brand": {"@type": "Brand", "name": "Can-Am"},
+  "manufacturer": {"@type": "Organization", "name": "Can-Am / BRP"},
+  "vehicleModelDate": "2026",
+  "vehicleEngine": {
+    "@type": "EngineSpecification",
+    "engineType": "900cc Turbocharged Triple-Cylinder (Rotax ACE)",
+    "enginePower": {
+      "@type": "QuantitativeValue",
+      "value": "135-200",
+      "unitText": "HP"
+    }
+  },
+  "vehicleTransmission": "pDrive Primary / QRS-X CVT",
+  "url": "https://canamsxs.com/maverick-x3"
+}
+</script>
